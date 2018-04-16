@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        {{> menu}}
+        <form class="searchForm" action="/image" method="post">
+            <input type="text" name="image" placeholder="Search for an image">
+            <input class="buttons" type="submit" value="Search">
+        </form>
+        
+        <img src="{{imageURL0}}">
+        <img src="{{imageURL1}}">
+        <img src="{{imageURL2}}">
+        <img src="{{imageURL3}}">
+    </body>
+</html>
